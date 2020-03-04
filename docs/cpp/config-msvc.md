@@ -163,12 +163,12 @@ The `label` value is what you will see in the tasks list; you can name this what
 
 The `problemMatcher` value selects the output parser to use for finding errors and warnings in the compiler output. For cl.exe, you'll get the best results if you use the `$msCompile` problem matcher.
 
-The `"isDefault": true` value in the `group` object specifies that this task will be run when you press `kb(workbench.action.tasks.build)`. This property is for convenience only; if you set it to false, you can still run it from the Terminal menu with **Tasks: Run Build Task**.
+The `"isDefault": true` value in the `group` object specifies that this task will be run when you press `kb(workbench.action.tasks.build)`. This property is for convenience only; if you set it to false, you can still run it from the Terminal menu with **Terminal: Run Build Task**.
 
 ### Running the build
 
 1. Go back to `helloworld.cpp`. Your task builds the active file and you want to build `helloworld.cpp`.
-1. To run the build task defined in `tasks.json`, press `kb(workbench.action.tasks.build)` or from the **Terminal** main menu choose **Tasks: Run Build Task**.
+1. To run the build task defined in `tasks.json`, press `kb(workbench.action.tasks.build)` or from the **Terminal** main menu choose **Terminal: Run Build Task**.
 1. When the task starts, you should see the Integrated Terminal panel appear below the source code editor. After the task completes, the terminal shows output from the compiler that indicates whether the build succeeded or failed. For a successful C++ build, the output looks something like this:
 
    ![C++ build output in terminal](images/msvc/build-output-in-terminal.png)
